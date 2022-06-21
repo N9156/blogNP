@@ -1,0 +1,18 @@
+{
+    "name": "natha/www",
+    "autoload": {
+        "psr-4": {
+            "Natha\\Www\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nathalie",
+            "email": "nathaliepichon.ca@gmail.com"
+        }
+    ],
+    "require": {
+        "michelf/php-markdown": "^1.9",
+        "twig/twig": "^3.4"
+    }
+}
