@@ -1,8 +1,8 @@
 {
-    "name": "natha/www",
+    "name": "natha/blog-np",
     "autoload": {
         "psr-4": {
-            "Natha\\Www\\": "src/"
+            "Natha\\BlogNp\\": "src/"
         }
     },
     "authors": [
@@ -11,8 +11,9 @@
             "email": "nathaliepichon.ca@gmail.com"
         }
     ],
-    "require": {
+    "require-dev": {
         "michelf/php-markdown": "^1.9",
-        "twig/twig": "^3.4"
+        "twig/twig": "^3.4",
+        "squizlabs/php_codesniffer": "*"
     }
 }
