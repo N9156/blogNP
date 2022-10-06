@@ -51,3 +51,11 @@ function postComment($postId, $author, $comment)
     //var_dump($affectedLines);
     //return $affectedLines;
 }
+
+//fonction qui insert les données du formulaire de contact le 08/08/2022
+function insertFormContact($)
+{
+    $db=dbConnect();
+    $contact=$db->prepare('INSERT INTO contacts(nom,prenom,email,message) VALUES(?,?,?,?)');
+    $affectedLinesContacts = $contact->execute(array($nom,$prenom,$email,$message));
+}

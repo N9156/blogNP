@@ -44,13 +44,13 @@ CREATE TABLE IF NOT EXISTS `comments` (
 --
 
 INSERT INTO `comments` (`id`, `post_id`, `author`, `comment`, `comment_date`) VALUES
-(1, 2, 'Mathieu', 'Preum\'s', '2017-09-24 17:12:30'),
+((1, 2, 'Mathieu', 'Preum\'s', '2017-09-24 17:12:30'),
 (2, 2, 'Sam', 'Quelqu\'un a un avis là-dessus ? Je ne sais pas quoi en penser.', '2017-09-24 17:21:34'),
 (8, 1, 'Jojo', 'C\'est moi !', '2017-09-28 19:50:14'),
 (9, 2, 'Mathieu', 'Retest\r\nEncore', '2017-10-27 11:46:50'),
 (10, 2, 'Sam', 'tu testes quoi ?', '2017-10-27 15:44:14'),
 (11, 2, 'nat', 'gg', '2022-05-20 23:27:26'),
-(12, 2, 'nat', 'super', '2022-05-20 23:27:45');
+(12, 2, 'nat', 'super', '2022-05-20 23:27:45'));
 
 -- --------------------------------------------------------
 
@@ -75,6 +75,24 @@ INSERT INTO `posts` (`id`, `title`, `content`, `creation_date`) VALUES
 (1, 'Bienvenue sur mon blog !', 'Je vous souhaite à toutes et à tous la bienvenue sur mon blog qui parlera de... PHP bien sûr !', '2017-09-18 16:28:41'),
 (2, 'Le PHP à la conquête du monde !', 'C\'est officiel, l\'éléPHPant a annoncé à la radio hier soir \"J\'ai l\'intention de conquérir le monde !\".\r\nIl a en outre précisé que le monde serait à sa botte en moins de temps qu\'il n\'en fallait pour dire \"éléPHPant\". Pas dur, ceci dit entre nous...', '2017-09-20 16:28:41');
 COMMIT;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `contacts` le 08/08/2022
+--
+
+
+DROP TABLE IF EXISTS `contacts`;
+CREATE TABLE IF NOT EXISTS `contacts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(255) NOT NULL,
+  `prenom` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `message` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

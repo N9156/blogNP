@@ -17,10 +17,14 @@
         <div class="container">
 
          <!-- Navigation -->
-         <?php include_once('header.php'); ?>
-        <?= $content ?>
+         
+         {% include 'header.html.twig' %}
+        
+        {{ content }}
         </div>
 
-        <?php include_once('footer.php'); ?>
+        {% include 'footer.html.twig' %}
+        
     </body>
 </html>
+

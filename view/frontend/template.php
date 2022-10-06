@@ -1,8 +1,16 @@
+/** 
+* php version 8.0.13
+* 
+* @author Author <nathalie@domain.com> 
+* @link http://localhost/ 
+*/
+
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
-        <title><?= $title ?></title>
+        <title><?php echo $title; ?></title>
         <link rel="icon" type="favicon.ico/images" href="public/images/N.ico" />
         <link href="public/css/style.css" rel="stylesheet" /> 
         <link
@@ -16,10 +24,10 @@
         <div class="container">
 
          <!-- Navigation -->
-         <?php include_once('header.php'); ?>
-        <?= $content ?>
+         <?php include_once header.php; ?>
+        <?php echo $content; ?>
         </div>
 
-        <?php include_once('footer.php'); ?>
+        <?php include_once footer.php; ?>
     </body>
 </html>
